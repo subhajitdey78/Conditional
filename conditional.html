@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditional</title>
+</head>
+<body>
+  <h1>Conditional Rendering</h1>
+  <p> Click on the button to see conditional redering</p>
+  <button onclick="conditional(5)" >Click Me!</button>
+  
+
+  <script>
+    function conditional(num) {
+      let button = document.createElement("BUTTON");
+      let button2 = document.createElement("BUTTON");
+      button.innerHTML= 'First Button';
+      button2.innerHTML= 'Second Button';
+       
+      if(num < 10) {
+        document.body.appendChild(button)
+      }else {
+        document.body.appendChild(button2)
+      }
+    }
+  </script>
+</body>
+</html>
